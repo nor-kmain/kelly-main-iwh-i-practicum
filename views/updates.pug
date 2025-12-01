@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+    head 
+        title= `${title}`
+        meta(name="updates" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add Custom Object (Pets)
+
+        .form-wrapper
+            form(method="POST")
+                label(for="petName") Pet name
+                input(type="text" name="petName" required)
+                label(for="petType") Pet type 
+                select(name="petType" required)
+                    option(value="Dog") Dog 
+                    option(value="Cat") Cat 
+                    option(value="Rabbit") Rabbit
+                label(for="petType") Pet color 
+                input(type="text" name="petColor" required)
+                input(type="submit" value="Submit")
+        br
+        a(href="/") Return to the homepage
